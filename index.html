@@ -1,47 +1,27 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Enter Code</title>
-</head>
+<script>
+  function checkCode() {
+    let input = document.getElementById("codeInput").value.trim();
 
-<body style="text-align:center; font-family:Arial;">
-
-  <h2>Enter the number:</h2>
-
-  <input type="text" id="codeInput" placeholder="Enter code">
-  <br><br>
-
-  <button onclick="checkCode()">Submit</button>
-
-  <p id="result" style="color:red;"></p>
-
-  <script>
-    function checkCode() {
-      let input = document.getElementById("codeInput").value.trim();
-
-      if (input === "53.56") {
-        window.location.href = "page1.html";
-      } 
-      else if (input === "53.13") {
-        window.location.href = "page3.html";
-      } 
-      else if (input === "44.82") {
-        window.location.href = "page2.html";
-      } 
-      else if (input === "4:37.60") {
-        window.location.href = "page4.html";
-      } 
-      else if (input === "51.58") {
-        window.location.href = "page5.html";
-     } 
-     else if (input === "77") {
-        window.location.href = "page6.html";
-      } 
-      else {
-        document.getElementById("result").innerText = "Incorrect";
-      }
+    if (input === "53.56") {
+      window.location.href = "page1.html";
+    } 
+    else if (input === "53.13") {
+      window.location.href = "page3.html";
+    } 
+    else if (input === "44.82") {
+      window.location.href = "page2.html";
+    } 
+    else if (input === "4:37.60") {
+      window.location.href = "page4.html";
+    } 
+    else if (input === "51.58") {
+      window.location.href = "page5.html";
+    } 
+    else if (input === "77") {
+      window.location.href = "page6.html";
+    } 
+    else {
+      document.getElementById("result").innerText = "Incorrect";
     }
-  </script>
-
-</body>
-</html>
+  }
+</script>
